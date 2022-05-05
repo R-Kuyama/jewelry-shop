@@ -1,0 +1,129 @@
+* {
+    font-family: 'Crimson Pro', serif;
+	box-sizing: border-box; /* コンテンツの幅をパディング込みにする */
+	padding: 0; /* padding リセット */
+	margin: 0; /* margin リセット */
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1000px; /* 最大幅1000pxで固定 */
+    padding: 0 18px; /* 左右の余白を指定 */
+    margin: 0 auto;
+}
+
+/* ここから #mainvisual */
+#mainvisual {
+    width: 90vw;
+    margin: 4vw auto 0;
+}
+
+#mainvisual img {
+    width: 100%;
+}
+
+/* ここから header */
+header {
+    display: flex;
+    align-items: center;
+    width: 90vw;
+    padding: 30px 0;
+    margin: 0 auto 30px;
+}
+
+header h1 {
+    line-height: 1px; /* h1で囲むことによってできる上下の余白を消すため */
+    margin-right: 50px;
+    width: 110px;
+}
+
+header img {
+    width: 100%;
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav li {
+    margin-right: 30px;
+}
+
+.nav li:last-child {
+    margin-right: 0;
+}
+
+/* ここから #concept */
+#concept {
+    display: flex;
+    align-items: center; /* .concept-textを画像の中央の高さにするため */
+    margin-bottom: 60px;
+}
+
+.concept-img {
+    width: 50%;
+}
+
+.concept-img img {
+    width: 100%;
+
+}
+
+.concept-text {
+    width: 50%;
+    padding: 0 7%;
+}
+
+.concept-text h2 {
+    margin-bottom: 5px;
+}
+
+.concept-text p {
+    margin-top: 30px;
+}
+
+/* ここから #work */
+#work {
+    display: flex;
+    align-items: center; /* .concept-textを画像の中央の高さにするため */
+    margin-bottom: 60px;
+}
+
+.work-text {
+    width: 50%;
+    padding: 0 7%;
+}
+
+.work-text h2 {
+    margin-bottom: 5px;
+}
+
+.work-text p {
+    margin-top: 30px;
+}
+
+.work-img {
+    width: 50%;
+}
+
+.work-img img {
+    width: 100%;
+}
+
+/* ここから footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0 20px; /* marginだと相殺がおきるため */
+}
+
+.footer-img {
+    line-height: 1px;
+}
+
+footer img {
+    width: 110px;
+}

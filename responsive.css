@@ -1,0 +1,67 @@
+/* ブレイクポイント767px スマホ向けメディアクエリ */
+@media (max-width: 767px) {
+    #mainvisual {
+        width: 100%; /* 全幅に変更 */
+        margin: 0; /* marginリセット */
+    }
+
+    #mainvisual img  {
+        height: 40vh; /* 画面の高さに対して50%に固定 */
+        object-fit: cover; /* ↑の高さと画面幅に合わせて横をトリミング */
+    }
+
+    header {
+        width: 100%;
+        padding: 20px 18px;
+    }
+
+    #concept {
+        flex-direction: column; /* 縦に並べる */
+    }
+
+    .concept-img {
+        width: 100%;
+    }
+    
+    .concept-img img {
+        margin-bottom: 10px;
+    }
+    
+    .concept-text {
+        width: 100%;
+        padding: 0;
+    }
+
+    .concept-text h2 {
+        font-size: 20px;
+    }
+
+    .concept-text p {
+        margin-top: 25px;
+    }
+
+    #work {
+        flex-direction: column-reverse; /* 逆順で縦に並べる */
+    }
+
+    .work-text {
+        width: 100%;
+        padding: 0;
+    }
+
+    .work-text h2 {
+        font-size: 20px;
+    }
+
+    .work-text p {
+        margin-top: 25px;
+    }
+
+    .work-img {
+        width: 100%;
+    }
+
+    .work-img img {
+        margin-bottom: 10px;
+    }
+}
