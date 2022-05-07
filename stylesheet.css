@@ -9,6 +9,10 @@ li {
     list-style: none;
 }
 
+a {
+	text-decoration: none; /* リンクの下線削除 */
+}
+
 .container {
     max-width: 1000px; /* 最大幅1000pxで固定 */
     padding: 0 18px; /* 左右の余白を指定 */
