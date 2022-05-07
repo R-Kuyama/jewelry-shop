@@ -11,6 +11,7 @@ li {
 
 a {
 	text-decoration: none; /* リンクの下線削除 */
+	color:black;
 }
 
 .container {
