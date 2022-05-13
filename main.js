@@ -4,7 +4,7 @@ document.getElementById('concept-btn').addEventListener('click', (e) => {
     // a タグの元の動作を無効化
     e.preventDefault();
     
-    // #concept 要素のてビューポートからの相対位置を取得して定数へ代入 ※ビューポートとは画面の現在地
+    // #concept 要素のビューポートからの相対位置を取得して定数へ代入 ※ビューポートとは画面の現在地
     const concept = document.getElementById('concept').getBoundingClientRect().top;
     
     // 現在のスクロール位置を取得して定数へ代入
@@ -14,7 +14,12 @@ document.getElementById('concept-btn').addEventListener('click', (e) => {
     const conceptTarget = concept + conceptOffset - 5;
     
     // 横と縦(x,y)位置を指定してスクロールする
-    window.scrollTo(0, conceptTarget);
+    window.scrollTo({
+        left: 0,
+        top: conceptTarget,
+        behavior: 'smooth'
+        
+    });
 });
 
 // #work-btn クリックで #work へスクロールする
@@ -23,5 +28,9 @@ document.getElementById('work-btn').addEventListener('click', (e) => {
     const work = document.getElementById('work').getBoundingClientRect().top;
     const workOffset = window.pageYOffset;
     const workTarget = work + workOffset - 5;
-    window.scrollTo(0, workTarget);
+    window.scrollTo({
+        left: 0,
+        top: workTarget,
+        behavior: 'smooth'
+        });
 });
