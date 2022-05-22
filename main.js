@@ -7,7 +7,7 @@ document.getElementById('concept-btn').addEventListener('click', (e) => {
     // #concept 要素のビューポートからの相対位置を取得して定数へ代入 ※ビューポートとは画面の現在地
     const concept = document.getElementById('concept').getBoundingClientRect().top;
     
-    // 現在のスクロール位置を取得して定数へ代入
+    // 現在のスクロール縦位置を取得して定数へ代入
     const conceptOffset = window.pageYOffset;
     
     // ページ内の要素の位置を算出して、-5で要素より少し上にずらして見やすくする
